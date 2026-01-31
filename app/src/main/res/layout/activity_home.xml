@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/white"
+    tools:context=".ui.home.HomeActivity">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Welcome to NeuroTrack! Select an analysis:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_navy_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnTypingAnalysis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TYPING PATTERN ANALYSIS"
+        android:backgroundTint="@color/bright_action_blue"
+        android:textColor="@color/white"
+        android:paddingVertical="15dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnScreenTimeAnalysis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SCREEN TIME ANALYSIS"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:paddingVertical="15dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnTypingAnalysis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:backgroundTint="@color/dark_gray"
+        android:textColor="@color/white"
+        android:paddingVertical="12dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

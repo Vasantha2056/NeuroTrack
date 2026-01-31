@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.NeuroTrack" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="Theme.NeuroTrack.FullScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.NeuroTrack.FullScreen</item>
+    </style>
+</resources>

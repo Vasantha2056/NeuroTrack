@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.analysis.AnalysisActivity">
+
+    <TextView
+        android:id="@+id/tvInstruction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Type freely in the box below. Press Analyze when done."
+        android:textSize="16sp"
+        android:textColor="@color/color_navy_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etTypingBox"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:hint="Start your typing session here..."
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvInstruction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnAnalyze"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ANALYZE TYPING"
+        android:backgroundTint="@color/color_primary_blue"
+        android:textColor="@color/white"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/etTypingBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnBackToHome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BACK TO HOME PAGE"
+        android:backgroundTint="@color/dark_gray"
+        android:textColor="@color/white"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/btnAnalyze"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAnalysisResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="@color/dark_gray"
+        tools:text="Analysis Report will appear here."
+        app:layout_constraintTop_toBottomOf="@id/btnBackToHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
